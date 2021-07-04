@@ -22,7 +22,10 @@ db.sequelize = sequelize;
 db.user = require("./user.model.js")(sequelize, Sequelize);
 db.role = require("./role.model.js")(sequelize, Sequelize);
 db.memoryRecall = require("./memoryRecall.model")(sequelize, Sequelize);
-db.iqQuiz = require("./IqQuiz.model")(sequelize, Sequelize);
+db.drawing = require("./drawing.model")(sequelize, Sequelize);
+db.performacet1 = require("./performacet1.model")(sequelize, Sequelize);
+db.performacet2 = require("./performacet2.model")(sequelize, Sequelize);
+db.voiceRecognition = require("./voiceRecognition.model")(sequelize, Sequelize);
 
 db.role.belongsToMany(db.user, {
   through: "user_roles",

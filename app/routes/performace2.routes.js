@@ -1,5 +1,5 @@
 module.exports = (app) => {
-  const items = require("../controllers/iqQuiz.controller");
+  const items = require("../controllers/performacet2.controller");
 
   var router = require("express").Router();
 
@@ -11,5 +11,5 @@ module.exports = (app) => {
 
   router.delete("/:id", items.delete);
 
-  app.use("/api/iqQuiz", router);
+  app.use("/api/performacet2", router);
 };

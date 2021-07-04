@@ -11,5 +11,5 @@ module.exports = (app) => {
 
   router.delete("/:id", items.delete);
 
-  app.use("/api/packages", router);
+  app.use("/api/drawing", router);
 };

@@ -11,6 +11,8 @@ require("./app/routes/memoryRecall.routes")(app);
 require("./app/routes/iqQuiz.routes")(app);
 require("./app/routes/voiceRecognition.routes")(app);
 require("./app/routes/drawing.routes")(app);
+require("./app/routes/performace1.routes")(app);
+require("./app/routes/performace2.routes")(app);
 var corsOptions = {
   origin: "http://localhost:8088",
 };
